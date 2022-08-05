@@ -266,7 +266,7 @@
         </div>
 
         <div>
-          <p class="foter-title">приєднуйтесь</p>
+          <p class="footer-title">приєднуйтесь</p>
           <ul class="list footer-social-list">
             <li class="footer-social-list-item">
               <a href="#" class="footer-link-icon">
@@ -297,6 +297,28 @@
               </a>
             </li>
           </ul>
+        </div>
+        <div class="footer-container-form">
+          <p class="footer-form-title">Підпишіться на розсилку</p>
+          <form class="footer-form">
+            <label for="user_footer_email">
+              <input
+                placeholder="E-mail"
+                id="user_footer_email"
+                type="email"
+                name="user_email"
+                class="footer-form-input"
+                required
+                pattern="([A-z0-9_.-]{1,})@([A-z0-9_.-]{1,}).([A-z]{2,8})"
+              />
+            </label>
+            <button type="submit" class="footer-form-btn">
+              Підписатися
+              <svg class="footer-form-btn-icon" width="24" height="24">
+                <use href="./images/svg/sprite.svg#icon-icon-send"></use>
+              </svg>
+            </button>
+          </form>
         </div>
       </div>
     </footer>
