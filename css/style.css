@@ -440,11 +440,9 @@ position: relative;
 .footer-container {
   display: flex;
   align-items: baseline;
+justify-content: space-between;
 }
 
-.footer-container-address {
-  margin-right: 70px;
-}
 
 .logo-footer {
   font-family: 'Raleway', sans-serif;
@@ -535,9 +533,6 @@ position: relative;
   transition: fill var(--transition-animation);
 }
 
-.footer-container-form {
-  margin-left: 93px;
-}
 
 .footer-form {
   display: flex;
@@ -549,7 +544,7 @@ position: relative;
 font-weight: 700;
 line-height: 1.14;
 text-transform: uppercase;
-color: #FFFFFF;
+color: var(--fon-color);
 margin-bottom: 20px;
 }
 
@@ -560,7 +555,7 @@ margin-bottom: 20px;
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
   border-radius: 4px;
   background-color: var(--hero-footer-bgr);
-  color: rgba(255, 255, 255, 0.6);
+  color: var(--fon-color);
   font-size: 16px;
   line-height: 1.25;
 
@@ -681,6 +676,10 @@ margin-left: 10px;
 margin-bottom: 10px;
 }
 
+.modal-form-field-texterea {
+  margin-bottom: 20px;
+}
+
 .modal-form {
 display: flex;
 flex-direction: column;
@@ -730,6 +729,8 @@ border-color: var(--accent-color);
 }
 
 .modal-form-message {
+  display: block;
+  resize: none;
   width: 100%;
   height: 120px;
   padding: 12px 16px;
